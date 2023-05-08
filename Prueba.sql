@@ -72,6 +72,7 @@ EXEC ConfirmOrder 10,'E',3; -- Error,Orden inexistente
 EXEC ConfirmOrder 1,'E',13; -- Error, El trabajador no existe
 EXEC ConfirmOrder 1,'S',2; -- Error, M�todo de pago invalido
 EXEC ConfirmOrder 6,'E',2; -- ok
+EXEC ConfirmOrder 1,'E',2;
 EXEC ConfirmOrder 3,'T',2; -- ok
 
 

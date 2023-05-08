@@ -122,11 +122,31 @@ GO
 
 DROP TABLE IF EXISTS Menu
 CREATE TABLE Menu(
-	ID INT PRIMARY KEY NOT NULL,
+	ID VARCHAR(5) PRIMARY KEY NOT NULL,
 	Nombre VARCHAR(200) NOT NULL,
 	Precio DECIMAL(8,2) NOT NULL
 );
 GO
+
+INSERT INTO Menu (ID, Nombre, Precio)
+VALUES ('C1', 'Cheeseburger', 41.00),
+       ('C2', 'Chicken Sandwich', 32.00),
+       ('C3', 'BBQ Ribs', 54.00),
+       ('C4', 'Pasta Alfredo', 47.00),
+       ('C5', 'Pizza Espinator', 85.00),
+       ('C6', 'Buffalo Wings', 36.00),
+       ('E1', 'Papas fritas', 15.00),
+       ('E2', 'Aros de cebolla', 17.00),
+       ('E3', 'Coleslaw', 12.00),
+       ('B1', 'Coca-Cola', 12.00),
+       ('B2', 'Fanta', 12.00),
+       ('B3', 'Sprite', 12.00),
+       ('B4', 'Té frío', 12.00),
+       ('B5', 'Cerveza de barril', 18.00),
+       ('P1', 'Copa de helado', 13.00),
+       ('P2', 'Cheesecake', 15.00),
+       ('P3', 'Cupcake de chocolate', 8.00),
+       ('P4', 'Flan', 10.00);
 
 SELECT 
     f.name AS ForeignKey,

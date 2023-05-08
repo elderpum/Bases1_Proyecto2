@@ -446,7 +446,7 @@ BEGIN
            i.cantidad AS Cantidad,
            i.observacion AS Observacion
     FROM dbo.Item i
-    INNER JOIN dbo.Menu p ON CONCAT(i.TipoProducto, producto) = p.Id
+    INNER JOIN dbo.Menu p ON CONCAT(i.TipoProducto, producto) = p.ID
     WHERE i.idOrden = @idOrder;
 
 END;

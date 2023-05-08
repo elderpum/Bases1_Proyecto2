@@ -1,4 +1,4 @@
--- ########################### REGISTRAR RESTAURANTES ###########################
+﻿-- ########################### REGISTRAR RESTAURANTES ###########################
 EXEC AddRestaurant 'R001', '1a EXECe zona 4', 'Guatemala', 4, 1770, 18, 1; -- ok
 EXEC AddRestaurant 'R002', '2a av zona 4', 'Mixco', 4, 1730, 10, 0; -- ok
 EXEC AddRestaurant 'R003', '3a EXECe zona 10', 'Guatemala', 10, 1744, 6, 1; -- ok
